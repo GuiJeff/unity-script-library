@@ -1,81 +1,82 @@
 # Unity Script Library
 
-Biblioteca pessoal de scripts Unity para referência e reutilização.  
-Organizada por função: núcleo do jogo, gameplay, movimento, UI e utilitários.
+A personal library of reusable Unity scripts, organized by functionality.  
+Useful as a reference source and a modular toolkit for future projects.
 
-## Estrutura
+## Structure
 
 ### core/
-Sistemas fundamentais de fluxo do jogo.
-- **AudioPlayer.cs** — gerenciamento simples de efeitos sonoros.
-- **EndScreen.cs** — lógica da tela de fim de jogo.
-- **GameManager.cs** — coordenação geral do estado do jogo.
-- **GameSession.cs** — controle de sessão, pontuação, vidas, persistência.
-- **LevelManager.cs** — carregamento de cenas.
-- **ScenePersist.cs** — persistência de objetos entre cenas.
+Fundamental game flow systems.
+- **AudioPlayer.cs** — simple sound effects handling.
+- **EndScreen.cs** — end-game screen logic.
+- **GameManager.cs** — global game state coordination.
+- **GameSession.cs** — session tracking, score, lives, persistence.
+- **LevelManager.cs** — scene loading utilities.
+- **ScenePersist.cs** — object persistence across scenes.
 
 ### gameplay/
-Scripts de lógica de jogo e interação.
-- **Bullet.cs** — projétil básico.
-- **CoinPickup.cs** — coleta de moeda.
-- **CrashDetector.cs** — detecção de colisão/derrota.
-- **DamageDealer.cs** — cálculo e entrega de dano.
-- **DustTrail.cs** — efeito de poeira no movimento.
-- **EnemySpawner.cs** — spawn de inimigos baseado em configuração.
-- **FinishLine.cs** — gatilho de final de fase.
-- **Health.cs** — sistema de vida.
-- **LevelExit.cs** — saída de fase com delay/opções.
-- **PathFinder.cs** — lógica de pathing simples.
-- **Player.cs** — controlador geral do jogador.
-- **QuestionSO.cs** — struct de pergunta (ScriptableObject).
-- **Quiz.cs** — gerenciamento do sistema de perguntas.
-- **ScoreKeeper.cs** — contador de pontuação.
-- **ScoreKeeper1.cs** — variante antiga/alternativa.
-- **Shooter.cs** — lógica de disparo.
+General gameplay and interaction logic.
+- **Bullet.cs** — basic projectile.
+- **CoinPickup.cs** — coin collection.
+- **CrashDetector.cs** — collision/defeat detection.
+- **DamageDealer.cs** — damage calculation and delivery.
+- **DustTrail.cs** — dust effect on movement.
+- **EnemySpawner.cs** — enemy spawning based on wave configuration.
+- **FinishLine.cs** — level-end trigger.
+- **Health.cs** — health system.
+- **LevelExit.cs** — level exit with delay/options.
+- **PathFinder.cs** — simple pathfinding logic.
+- **Player.cs** — main player controller.
+- **QuestionSO.cs** — question ScriptableObject.
+- **Quiz.cs** — quiz system manager.
+- **ScoreKeeper.cs** — score counter.
+- **ScoreKeeper1.cs** — legacy/alternative version.
+- **Shooter.cs** — shooting logic.
 
 ### movement/
-Scripts específicos de movimentação.
-- **EnemyMovement.cs** — movimento de inimigos.
-- **PlayerController.cs** — leitura de input e controle do jogador.
-- **PlayerMovement.cs** — locomotion do jogador.
+Movement-specific scripts.
+- **EnemyMovement.cs** — enemy movement behaviour.
+- **PlayerController.cs** — input reading and control.
+- **PlayerMovement.cs** — player locomotion.
 
 ### ui/
-Elementos de interface.
-- **UIDisplay.cs** — atualização de UI.
-- **UIGameOver.cs** — tela de derrota.
+UI components.
+- **UIDisplay.cs** — HUD updates.
+- **UIGameOver.cs** — game-over screen.
 
 ### utilities/
-Ferramentas auxiliares.
-- **CameraShake.cs** — tremor de câmera.
-- **SpriteScroller.cs** — scroll de sprites.
-- **Timer.cs** — temporizador genérico.
-- **WaveConfigSO.cs** — configuração de ondas (ScriptableObject).
+General-purpose tools and helpers.
+- **CameraShake.cs** — camera shake effect.
+- **SpriteScroller.cs** — sprite scrolling.
+- **Timer.cs** — generic timer.
+- **WaveConfigSO.cs** — wave configuration ScriptableObject.
 
-## Como usar
-Copie módulos ou trechos conforme necessário.  
-Scripts são autocontidos e podem ser reutilizados entre projetos sem dependências adicionais.
+## Usage
+Scripts are self-contained and can be copied directly into any Unity project.  
+Designed for modular reuse without additional dependencies.
 
-## Índice rápido
+## Quick Index
+
 ### Core
-- [AudioPlayer](core/AudioPlayer.cs)
-- [GameSession](core/GameSession.cs)
+- [AudioPlayer](core/AudioPlayer.cs)  
+- [GameSession](core/GameSession.cs)  
 - [LevelManager](core/LevelManager.cs)
 
 ### Gameplay
-- [Player](gameplay/Player.cs)
-- [EnemySpawner](gameplay/EnemySpawner.cs)
-- [Health](gameplay/Health.cs)
+- [Player](gameplay/Player.cs)  
+- [EnemySpawner](gameplay/EnemySpawner.cs)  
+- [Health](gameplay/Health.cs)  
 - [Shooter](gameplay/Shooter.cs)
 
 ### Movement
-- [PlayerMovement](movement/PlayerMovement.cs)
+- [PlayerMovement](movement/PlayerMovement.cs)  
 - [EnemyMovement](movement/EnemyMovement.cs)
 
 ### UI
-- [UIDisplay](ui/UIDisplay.cs)
+- [UIDisplay](ui/UIDisplay.cs)  
 - [UIGameOver](ui/UIGameOver.cs)
 
 ### Utilities
-- [CameraShake](utilities/CameraShake.cs)
-- [Timer](utilities/Timer.cs)
+- [CameraShake](utilities/CameraShake.cs)  
+- [Timer](utilities/Timer.cs)  
 - [WaveConfigSO](utilities/WaveConfigSO.cs)
