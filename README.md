@@ -62,15 +62,16 @@ Designed for modular reuse without additional dependencies.
 - [GameSession](core/GameSession.cs)  
 - [LevelManager](core/LevelManager.cs)
 
-### Gameplay
-- [Player](gameplay/Player.cs)  
+### Gameplay 
 - [EnemySpawner](gameplay/EnemySpawner.cs)  
 - [Health](gameplay/Health.cs)  
 - [Shooter](gameplay/Shooter.cs)
+- [WaveConfigSO](gameplay/WaveConfigSO.cs)
 
 ### Movement
 - [PlayerMovement](movement/PlayerMovement.cs)  
 - [EnemyMovement](movement/EnemyMovement.cs)
+- [Player](movement/Player.cs) 
 
 ### UI
 - [UIDisplay](ui/UIDisplay.cs)  
@@ -78,5 +79,4 @@ Designed for modular reuse without additional dependencies.
 
 ### Utilities
 - [CameraShake](utilities/CameraShake.cs)  
-- [Timer](utilities/Timer.cs)  
-- [WaveConfigSO](utilities/WaveConfigSO.cs)
+- [Timer](utilities/Timer.cs)
